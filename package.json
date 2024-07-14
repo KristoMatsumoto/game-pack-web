@@ -1,11 +1,13 @@
 {
-  "name": "node-js",
+  "name": "game-pack-web",
   "version": "0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "migrate": "node ./db/migrate.js",
-    "rollback": "node ./db/migrate.js down"
+    "db:migrate": "node ./db/migrate.js",
+    "db:rollback": "node ./db/migrate.js down",
+    "sass:build": "sass assets/sass assets/css",
+    "sass:watch": "sass --watch assets/sass:assets/css"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +21,8 @@
     "pg-promise": "^11.9.0",
     "sequelize": "^6.37.3",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }

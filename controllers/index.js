@@ -1,3 +1,3 @@
-// exports.home = require('./home_controller');
-// exports.user = require('./user_controller');
-// exports.session = require('./session_controller');
+exports.home = require('./home_controller');
+exports.users = require('./users_controller');
+exports.sessions = require('./sessions_controller');

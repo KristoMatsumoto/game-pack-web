@@ -131,3 +131,9 @@ dist
 
 # DB settings
 db/properties.json
+
+# Sass compile
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

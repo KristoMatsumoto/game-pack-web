@@ -1,0 +1,16 @@
+$font_family_main: 'Roboco', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// Themes connection
+.dark-theme {
+    @import 'themes/dark-theme';
+    @import 'theme-styles';
+}
+.light-theme {
+    @import 'themes/light-theme';
+    @import 'theme-styles';
+}
